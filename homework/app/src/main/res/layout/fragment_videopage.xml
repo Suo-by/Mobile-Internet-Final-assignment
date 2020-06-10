@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.videoFragment">
+
+    <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+        android:id="@+id/videoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.douyin_suo.widget.LikeClickLayout
+        android:id="@+id/likeClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/ic_user_head" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_spot"
+                android:src="@drawable/ic_follow"
+                android:scaleType="centerInside"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="39dp" />
+        </RelativeLayout>
+
+        <com.github.like.LikeButton
+            android:id="@+id/likeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="34dp"
+            app:icon_size="25dp"
+            app:icon_type="heart"
+            app:like_drawable="@drawable/ic_like_on"
+            app:unlike_drawable="@drawable/ic_like_off" />
+        <TextView
+            android:id="@+id/likecount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="点赞数"
+            android:textColor="#ffffff"/>
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ic_comment" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="2780"
+            android:textColor="#ffffff" />
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ic_share" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="431"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="180dp" />
+    </LinearLayout>>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/descripe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频描述"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

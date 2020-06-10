@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="douYin_Suo/app" />
+      <module fileurl="file://$PROJECT_DIR$/../douYin_Suo.iml" filepath="$PROJECT_DIR$/../douYin_Suo.iml" group="douYin_Suo" />
+      <module fileurl="file://$PROJECT_DIR$/../likebutton/likebutton.iml" filepath="$PROJECT_DIR$/../likebutton/likebutton.iml" group="douYin_Suo/likebutton" />
+    </modules>
+  </component>
+</project>

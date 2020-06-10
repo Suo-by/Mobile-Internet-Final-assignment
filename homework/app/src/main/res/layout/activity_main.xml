@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    android:clipChildren="false"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom_line"
+        android:layout_marginBottom="-50dp" />
+
+    <LinearLayout
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="#00FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/item_navigation_bar_txt"
+            android:text="首页"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/item_navigation_bar_txt"
+            android:text="同城"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_add" />
+
+        <TextView
+            style="@style/item_navigation_bar_txt"
+            android:text="消息"
+            android:textStyle="bold"/>
+
+        <TextView
+            style="@style/item_navigation_bar_txt"
+            android:text="我"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</RelativeLayout>
